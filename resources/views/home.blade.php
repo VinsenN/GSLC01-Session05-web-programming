@@ -14,7 +14,7 @@
                     Mahasiswa
                 </div>
                 <div class="card-body">
-                    <p class="card-text">Berisi Data Mengenai Dosen</p>
+                    <p class="card-text">Berisi Data Mengenai Mahasiswa</p>
                     <a href="/mahasiswa" class="btn btn-primary">Click Here</a>
                 </div>
             </div>
