@@ -6,6 +6,7 @@ Build website view using blade with Conditional Rendering, Loop Rendering, and R
   * Go to the folder application using cd command on your cmd
   * Run `composer install` to download all dependencies needed.
   * Run `copy .env.example .env`
+  * Run `php artisan key:generate`
   * Run `php artisan serve` and access the webapp on localhost port 8000 (http://localhost:8000/).
 
 ## Authors
