@@ -27,4 +27,4 @@ Reinert Yosua Rumagit, S.Kom., M.T.I - D6191 as lecturer
 
 | Course                        | Class |
 | :---------------------------- | :---- |
-| ISYS6169001 - Web Programming | LH01  |
+| COMP6681001 - Web Programming | LH01  |
