@@ -1,5 +1,6 @@
 ## Project Task
-Build website view using blade with Conditional Rendering, Loop Rendering, and Reusable Component Tag
+[GSLC Session 5](https://github.com/VinsenN/Web-Programming-GSLC/tree/68d19ede7fd1cce6b0f95b170baa6a5373f19140): Build website view using blade with Conditional Rendering, Loop Rendering, and Reusable Component Tag 
+GSLC Session 6: Integrate web with Controller
 
 ## Deployment (For Windows)
   * Clone project
