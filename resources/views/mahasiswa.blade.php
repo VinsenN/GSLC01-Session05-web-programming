@@ -17,21 +17,25 @@
     </p>
 
     <p>
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#statistik"  aria-expanded="false">
             Statistik
         </button>
-    </p>
-    <div class="collapse" id="collapseExample">
-        <div class="card card-body font-monospace">
-            <p>Jumlah Mahasiswa: {{$n}}</p>
-            <p>Total Nilai: {{$sum}}</p>
-            <p style="margin: 0">Rata-rata Nilai: {{$avg}}</p>
+
+        <div id="mahasiswa">
+            <div class="collapse" id="statistik" data-bs-parent="#mahasiswa">
+                <div class="card card-body font-monospace">
+                    <p>Jumlah Mahasiswa: {{$n}}</p>
+                    <p>Total Nilai: {{$sum}}</p>
+                    <p style="margin: 0">Rata-rata Nilai: {{$avg}}</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </p>
 
     <div>
         @include('template.templateTable', ['data' => $mahasiswa, 'col1' => 'Nama', 'col2' => 'Nilai'])
     </div>
+
     <div>
         @if ($avg >= 80)
             <div class="alert alert-success" role="alert">

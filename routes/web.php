@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\DosenController;
+use App\Http\Controllers\MahasiswaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,28 +21,6 @@ Route::get('/', function () {
 
 Route::redirect('/home', '/');
 
-Route::get('/mahasiswa', function () {
-    $dataMhs = ["Helen Hickey" => 80,
-            "Tim Atkinson" => 70,
-            "Allison Buck" => 100,
-            "Maggie Francis" => 50,
-            "Betsy Macias" => 100,
-            "Debora Weeks" => 40 ,
-            "Kris Hurd" => 100,
-            "Janie Carson" => 70,
-            "Rachel Wyatt" => 100,
-            "Shelly Hayden" => 90];
-
-    return view('mahasiswa')
-        -> with('mahasiswa', $dataMhs)
-        -> with('class', 'LH01');
-});
-
-Route::get('/dosen', function () {
-    $dataDsn = [];
-
-    return view('dosen')
-        -> with('dosen', $dataDsn)
-        -> with('class', 'LH01');
-});
+Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
+Route::get('/dosen', [DosenController::class, 'index']);
 

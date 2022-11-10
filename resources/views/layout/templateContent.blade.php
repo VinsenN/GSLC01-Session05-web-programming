@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GSLC 01</title>
+    <title>GSLC 02</title>
 
     <link rel="icon" href="{{asset('favicon.png')}}" crossorigin="anonymous">
 
@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand">GSLC 01</a>
+            <a class="navbar-brand">GSLC 02</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,6 +31,9 @@
                         </li>
                     @endfor
                 </ul>
+                <div class="d-flex">
+                    <img src="{{asset('favicon.png')}}" alt="" width="40px" height="auto">
+                </div>
             </div>
         </div>
     </nav>

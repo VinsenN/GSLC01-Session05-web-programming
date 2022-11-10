@@ -1,15 +1,17 @@
 @extends('layout.templateDesc')
 
 @section('content')
+    <div class="overlay"></div>
     <div class="title">
-        <p class="text-center fs-3 fw-bold">LH01 - GSLC 01 - Blade</p>
-        <p class="text-center fs-3 fw-light">2440031521 - Vinsen Nawir</p>
+        <p class="text-center fs-3 mb-0 fw-bold">LH01 - GSLC 02 - Controller</p>
+        <p class="text-center fs-4 mb-0">Integrate your web with Controller</p>
+        <p class="text-center fs-5 fw-light">2440031521 - Vinsen Nawir</p>
         <br>
     </div>
 
     <div class="row">
         <div class="col-sm-6">
-            <div class="card text-center">
+            <div class="card text-center border-dark">
                 <div class="card-header">
                     Mahasiswa
                 </div>
@@ -20,7 +22,7 @@
             </div>
         </div>
         <div class="col-sm-6">
-            <div class="card text-center">
+            <div class="card text-center border-dark">
                 <div class="card-header">
                     Dosen
                 </div>
@@ -32,49 +34,17 @@
         </div>
     </div>
 
-    <div>
+    <div class="px-2 py-2 mt-3" style="backdrop-filter: blur(33px);">
         <br>
         <p class="fw-bold"> Penjelasan: </p>
         <p style="text-align: justify;">
             <p>Berikut tampilan website yang telah saya buat dengan menggunakan framework <strong> Laravel versi 8 </strong> dan memanfaatkan Laravel feature blade. Mengenai CSS Framework, saya menggunakan <strong> Bootstrap 5. </strong></p>
-            <p>Penggunaan Conditional Rendering terdapat pada bagian file:</p>
+            <p>Terdapat <strong> update  </strong> yang telah dilakukan pada website ini yaitu melakukan integrasi dengan Controller dan peningkatan dalam tampilan website.</p>
+            <p class="mb-1">File controller yang telah dibuat antara lain:</p>
             <ul>
-                <li>mahasiswa.blade.php (if, elseif, endif)</li>
+                <li>DosenController.php</li>
+                <li>MahasiswaController.php</li>
             </ul>
-
-            <p>Penggunaan Loop Rendering terdapat pada bagian file:</p>
-            <ul>
-                <li>mahasiswa.blade.php (foreach)</li>
-                <li>templateContent.blade.php (forelse) </li>
-            </ul>
-
-            <p>Penggunaan Reusable Component Tag terdapat pada bagian file:</p>
-            <ul>
-                <li>include</li>
-                <ul>
-                    <li>templateContent.blade.php</li>
-                    <li>dosen.blade.php</li>
-                    <li>mahasiswa.blade.php</li>
-                </ul>
-                <li>extends</li>
-                <ul>
-                    <li>dosen.blade.php</li>
-                    <li>mahasiswa.blade.php</li>
-                    <li>home.blade.php</li>
-                </ul>
-                <li>yields</li>
-                <ul>
-                    <li>templateDesc.blade.php</li>
-                    <li>templateContent.blade.php</li>
-                </ul>
-                <li>section</li>
-                <ul>
-                    <li>dosen.blade.php</li>
-                    <li>mahasiswa.blade.php</li>
-                    <li>home.blade.php</li>
-                </ul>
-            </ul>
-
         </p>
     </div>
 @endsection

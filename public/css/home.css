@@ -1,0 +1,11 @@
+body{
+    background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Others/images/76.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card {
+    background-color: rgba(245, 245, 245, 0.4);
+}
+.card-header, .card-footer {
+    opacity: 1;
+}
